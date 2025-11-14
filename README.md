@@ -1,13 +1,47 @@
-This is a replica of the **Linux `grep` command-line utility**; the objective here is just to learn how to make a **Rust CLI application**. 
+# 🔍 MiniGrep in Rust
 
-You can use **The Rust Programming Language book** to try to replicate it: https://doc.rust-lang.org/book/ch12-00-an-io-project.html.
+This project is a **functional replica** of the **`grep`** command-line utility from Linux. The primary goal is to apply concepts and learn how to build a CLI (Command Line Interface) application using the **Rust** programming language.
 
-This current version was prepared to be used as a **real CLI**, so you can use flags (**-h** and **-i**) just as you would use with `grep`. However, you can still check the code of the **unaltered version** in the first commit of this repository.
+-----
 
-To use it, you can download the binary in the **release** section and install it to your system path, or simply by directing the command **right to the binary**:
+## 📚 Study Reference
 
-`./minigrep to poem.txt -i`
+This `minigrep` follows the I/O project covered in the official Rust book.
 
-If you use Cargo, you can **also** clone this application and install it using:
+You can follow along and attempt to replicate the code using the book:
+[The Rust Programming Language: Chapter 12](https://doc.rust-lang.org/book/ch12-00-an-io-project.html)
 
-`cargo install --path .`
+-----
+
+## ✨ CLI Features
+
+This updated version is prepared to be used as a real CLI, allowing the use of flags (options) just like the original `grep`.
+
+  * **Supported Flags:**
+      * **`-i` or `--ignore-case`:** Performs the search in a **case-insensitive** manner.
+      * **`-h` or `--help`:** Displays the usage and help message.
+
+> **Note:** You can check the code of the **unaltered version**, as presented in the book, in the [first commit](https://github.com/joaopabdala/minigrep/commit/a65f850db786963be73e56f2a9370b07ad196b4b) of this repository.
+
+-----
+
+## 🚀 How to Use and Install
+
+### 1\. Pre-compiled Binary (Recommended)
+
+You can download the binary from the **[release section](https://github.com/joaopabdala/minigrep/releases)** and install it to your system path.
+
+Alternatively, execute the command directly by pointing to the binary:
+
+```bash
+./minigrep to poem.txt -i
+```
+
+### 2\. Installation via Cargo (For Rust Developers)
+
+If you have Cargo installed, you can clone the repository and install it in your environment:
+
+```bash
+# Installs the executable into your Cargo binary PATH
+cargo install --path .
+```
